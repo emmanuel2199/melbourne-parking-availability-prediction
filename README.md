@@ -9,33 +9,34 @@
 
 ## Project Overview
 
-This project applies predictive analytics to forecast on-street parking availability in Melbourne using real-time parking sensor data and parking restriction information from the City of Melbourne Open Data platform.
+This project applies predictive analytics to forecast **on-street parking availability in Melbourne** using real-time parking sensor data and parking restriction information from the **City of Melbourne Open Data platform**.
 
-The goal is to identify patterns in parking availability and predict whether a parking bay is likely to be legally available at a given time.
+Urban drivers often struggle to find legal parking spaces due to time-based restrictions and limited availability. This project explores patterns in parking usage and builds a machine learning model to predict whether a parking bay is likely to be available at a given time.
 
 ---
 
-## Problem Statement
+## Project Objectives
 
-Urban drivers often struggle to find legal parking spaces due to time-based restrictions and limited availability.
+The objectives of this project are to:
 
-This project aims to:
-
-- Predict parking availability
-- Identify violation patterns
-- Analyse temporal parking behaviour
-- Provide insights for smarter urban mobility planning
+- Analyse parking availability patterns across Melbourne
+- Identify parking violations based on restriction rules
+- Perform exploratory data analysis on parking sensor data
+- Build a predictive model to forecast parking availability
+- Provide insights that could support smarter urban mobility planning
 
 ---
 
 ## Data Sources
 
-City of Melbourne Open Data Portal:
+Data used in this project was obtained from the **City of Melbourne Open Data Portal**.
+
+Datasets include:
 
 - On-Street Parking Bay Sensors dataset
-- Parking Sign Plates dataset
+- Sign Plates Located in Each Parking Zone dataset
 
-These datasets include information about:
+These datasets provide information about:
 
 - Parking sensor status
 - Parking zones
@@ -45,15 +46,41 @@ These datasets include information about:
 
 ---
 
+## Technologies Used
+
+### Programming Language
+
+- Python
+
+### Libraries
+
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Folium
+
+### Tools
+
+- Jupyter Notebook
+- Git
+- GitHub
+
+---
+
 ## Methodology
 
 ### Data Integration
-Parking sensor data was combined with parking restriction signage data.
+
+Parking sensor data was combined with parking restriction signage data to determine whether parking was legally allowed at specific times.
 
 ### Data Cleaning
-Missing values and inconsistent records were handled to ensure accurate modelling.
+
+The datasets were cleaned and preprocessed to remove inconsistencies and missing values.
 
 ### Feature Engineering
+
 Time-based features were created including:
 
 - Hour of day
@@ -63,16 +90,16 @@ Time-based features were created including:
 
 ### Exploratory Data Analysis (EDA)
 
-Analysis was performed to identify patterns such as:
+EDA was performed to analyse:
 
-- Violations by weekday
+- Parking violations by weekday
 - Violations by hour
-- Violations by zone
-- Restriction type patterns
+- Violation patterns by parking zone
+- Distribution of parking restriction types
 
 ### Predictive Modelling
 
-A **Random Forest Classifier** was trained to predict parking availability.
+A **Random Forest Classifier** was trained to predict whether parking would be legally available.
 
 Model features included:
 
@@ -83,38 +110,25 @@ Model features included:
 
 ### Model Evaluation
 
-The predictive model achieved approximately:
+The model achieved approximately:
 
-**75% classification accuracy**
-
-for predicting legal parking availability.
+**75% accuracy** in predicting legal parking availability.
 
 ---
 
 ## Key Insights
 
-- Parking violations occur most frequently during peak daytime hours.
-- Some zones consistently show higher violation rates.
-- Time-based restrictions significantly influence parking availability.
+- Parking violations are most common during peak daytime hours.
+- Some parking zones consistently show higher violation rates.
+- Time-based parking restrictions strongly influence parking availability.
 
 ---
 
-## Technologies Used
+## Project Report
 
-Python Libraries:
+The full analysis including visualisations and results can be viewed here:
 
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Folium
-
-Tools:
-
-- Jupyter Notebook
-- Git
-- GitHub
+📄 **[View Project Report](melbourne-parking-availability-prediction-report.pdf)**
 
 ---
 
